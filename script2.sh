@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Directory containing the text files
+# Directory containing the file
 DIR="/home/kali/Desktop/XSS"
 
 # Input and output files
-INPUT_FILE="$DIR/merged_output.txt"
-OUTPUT_FILE="$DIR/cleaned_output.txt"
-TEMP_FILE="$DIR/temp_output.txt"
+INPUT_FILE="$DIR/xss.txt"
+OUTPUT_FILE="$DIR/xss_cleaned.txt"
+TEMP_FILE="$DIR/temp_xss.txt"
 
 # Check if the input file exists
 if [ -f "$INPUT_FILE" ]; then
