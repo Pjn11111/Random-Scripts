@@ -18,8 +18,7 @@ if [ -d "$DIR" ]; then
   do
     # Check if the file exists to handle the case where there are no .txt files
     if [ -f "$FILE" ]; then
-      cat "$FILE" >> "$OUTPUT_FILE"
-      echo "" >> "$OUTPUT_FILE"  # Add a newline for separation
+      grep -v '^$' "$FILE" >> "$OUTPUT_FILE"
     fi
   done
   
